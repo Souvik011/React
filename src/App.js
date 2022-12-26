@@ -29,7 +29,7 @@ function App() {
   const result = [];
   expenses.forEach((key) => {
     result.push
-    (<ExpenseItem date = {key.date} title= {key.title} amount = {key.amount} Location = {key.LocationOfExpenditure}></ExpenseItem>)
+    (<ExpenseItem date = {key.date} amount = {[key.title , key.amount]} Location = {key.LocationOfExpenditure}></ExpenseItem>)
   })
 
   return (
